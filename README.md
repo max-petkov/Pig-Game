@@ -1,4 +1,4 @@
-# Pig-Game
+# Pig Game
 <h3>Game rules:</h3>
 <p>Each turn, a player repeatedly rolls a dice until either a 1 is rolled or the player decides to "hold":<p>
 <ul>
