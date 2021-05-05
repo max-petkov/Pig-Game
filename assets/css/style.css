@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --color-white: #fff;
+  --color-dark: #2f2f2f;
+  --color-dark-gray: #888888;
+  --color-purple: #753682;
+  --color-red: #bf2e34;
+  --color-pink: #c7365f;
+}
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+    to top left,
+    var(--color-purple) 0%,
+    var(--color-red) 100%
+  );
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  position: relative;
+}
+
+/* Text */
+.text-center {
+  text-align: center;
+}
+
+.fs-2rem {
+  font-size: 2rem;
+}
+
+.fs-4rem {
+  font-size: 4rem;
+}
+
+/* Spacings */
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.pt-4 {
+  padding-top: 2rem;
+}
+
+.py-3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-4 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pb-3 {
+  padding-bottom: 2rem;
+}
+
+/* Display */
+.d-flex-space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.d-none {
+  display: none;
+}
+
+/* UI Elements */
+.player-section {
+  opacity: 0.4;
+  width: 100%;
+  height: 50vh;
+  background-color: var(--color-white);
+}
+
+.dice-score-container {
+  border-radius: 4px;
+  background-color: var(--color-pink);
+  margin: 0 auto;
+  width: 200px;
+  color: var(--color-white);
+  box-shadow: 0 2px 4px var(--color-dark-gray);
+}
+
+.player-active {
+  opacity: 0.75;
+  font-weight: bold;
+  box-shadow: 0 0 15px var(--color-dark);
+}
+
+.player-winner {
+  opacity: 1;
+  background-color: var(--color-dark);
+  color: var(--color-pink);
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 4px var(--color-dark-gray);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-new-game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-row {
+  position: absolute;
+  top: 46%;
+  left: 4%;
+}
+
+.btn-hold {
+  position: absolute;
+  top: 46%;
+  right: 4%;
+}
+
+img {
+  position: absolute;
+  width: 64px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 4px var(--color-dark-gray);
+  z-index: 1;
+}
+
+/* Media query */
+@media (min-width: 768px) {
+  /* General */
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main {
+    width: 85%;
+  }
+
+  /* UI Elements */
+  .player-section {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .btn:active {
+    transform: translate(-50%, -45%);
+  }
+
+  .btn-row {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .btn-hold {
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  img {
+    top: 28%;
+    width: 88px;
+  }
+
+  /* Border */
+  .border-radius-tl-bl-4px {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+
+  .border-radius-tr-br-4px {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+
+  /* Spacings MD */
+  .p-md {
+    padding: 5rem;
+  }
+
+  /* Display MD */
+  .d-flex-md {
+    display: flex;
+  }
+}

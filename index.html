@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Pig Game 🎲</title>
+  </head>
+
+  <body>
+    <main class="d-flex-md">
+      <section
+        id="player1"
+        class="player-section border-radius-tl-bl-4px pt-4 player-active"
+      >
+        <div>
+          <h1 class="text-center fs-2rem">PLAYER 1</h1>
+          <p id="holdScoreP1" class="text-center mb-5 fs-4rem">0</p>
+        </div>
+        <div class="dice-score-container py-3 px-4">
+          <h3 class="text-center mb-2">CURRENT</h3>
+          <p id="diceScoreP1" class="text-center fs-2rem">0</p>
+        </div>
+      </section>
+      <section id="player2" class="player-section border-radius-tr-br-4px pt-4">
+        <div>
+          <h1 class="text-center fs-2rem">PLAYER 2</h1>
+          <p id="holdScoreP2" class="text-center mb-5 fs-4rem">0</p>
+        </div>
+        <div class="dice-score-container py-3 px-4">
+          <h3 class="text-center mb-2">CURRENT</h3>
+          <p id="diceScoreP2" class="text-center fs-2rem">0</p>
+        </div>
+      </section>
+      <img src="" alt="dice" class="d-none" />
+      <button id="newGame" class="btn btn-new-game d-none">🔁 NEW GAME</button>
+      <button id="rollDice" class="btn btn-row">🎲 ROLL</button>
+      <button id="holdScore" class="btn btn-hold">📥 HOLD</button>
+    </main>
+    <script src="assets/js/game-rules.js"></script>
+  </body>
+</html>
