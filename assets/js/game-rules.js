@@ -7,6 +7,7 @@ const dice = document.querySelector("img");
 let activePlayer = 1;
 let diceScore = 0;
 let holdCurrentScore = 0;
+
 const switchPlayer = function () {
   diceScore = 0;
   activePlayer = activePlayer === 1 ? 2 : 1;
